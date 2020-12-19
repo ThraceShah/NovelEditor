@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="NovelEditor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NovelEditor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <muxc:NavigationView x:Name="主页" IsBackButtonVisible="Collapsed" IsBackEnabled="False" PaneDisplayMode="Left">
+        <muxc:NavigationView.MenuItems>
+            <muxc:NavigationViewItem Icon="Play" Content="作品管理" Tag="我的作品" />
+            <muxc:NavigationViewItem Icon="Play" Content="其他" Tag="其他" />
+        </muxc:NavigationView.MenuItems>
+        <Frame x:Name="Maintheme" x:FieldModifier="Public"/>
+    </muxc:NavigationView>
+</Page>
